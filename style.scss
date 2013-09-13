@@ -1,0 +1,175 @@
+@import "reset";
+
+
+$gray: #ccc;
+$green: #bbef9a;
+
+html, body {
+	height: 100%;
+
+	@media(max-width: 500px) {
+		height: auto;
+	}
+
+}
+
+.background {
+	background-color: #00A64F;
+	// background-image: url('images/Imire-11.jpg');
+	background-image: url('images/Imire-11-blur.png');
+	// background-image: url('images/banner-map.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.brand {
+	// width: 500px;
+	height: 50%;
+	@media(max-width: 500px) {
+		height: 300px;
+		padding: 40px;
+		box-sizing: border-box;
+	}
+	margin: auto;
+	padding-top: 50px;
+	text-align: center;
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+	}
+
+}
+
+.content {
+	border-top: 4px solid $gray;
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 40px;
+	width: 100%;
+	height: auto;
+	@media(max-width: 500px) {
+		position: relative;
+		height: auto;
+		padding: 40px;
+		box-sizing: border-box;
+	}
+	background-color: rgba(#fff, 0.8);
+	text-align: center;
+
+	p {
+		// width: 442px;
+		padding-top: 20px;
+		font-size: 14px;
+		line-height: 1.2;
+		font-family: helvetica, arial, sans;
+		display: block;
+		margin: auto;
+		color: #999;
+		text-align: left;
+
+		img {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	.italic {
+		font-style: italic;
+	}
+
+	.modular {
+		font-weight: bold;
+		color: darken($green, 30);
+	}
+
+	form {
+		margin-top: 30px;
+		position: relative;
+		// width:442px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 20px;
+
+	}
+
+	.email-input {
+		height: 60px;
+		width: 100%;
+		border: 1px solid $gray;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		font-size: 28px;
+		color: $gray;
+		padding: 5px 20px;
+		box-sizing: border-box;
+	}
+
+	.email-submit {
+		position: absolute;
+		top: 29px;
+		right: 31px;
+		vertical-align: top;
+		width: 42px;
+		height: 42px;
+		border: 0;
+		background: rgba($green,0.8);
+		padding: 0;
+		margin: 0;
+		padding: 10px;
+		border: 1px solid rgba($gray, 0.8);
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		color: darken($gray, 20);
+		font-size: 32px;
+		cursor: pointer;
+		// -webkit-transition:all .05s linear;
+		background-image: url(images/heart.png);
+		background-size: 80%;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&:hover {
+			background-color: lighten($green, 10);
+			background-size: 70%;
+			box-shadow: inset 0 0 2px 1px rgba(black, 0.2);
+		}
+	}
+
+	.links {
+		margin-top: 40px;
+		li {
+			display: inline-block;
+			padding: 0 10px;
+			a {
+				font-family: helvetica, arial;
+				color: darken($green, 40);
+				&:hover {
+					color: darken($green, 25);
+				}
+			}
+
+			$orange: #ff721a;
+			.orange {
+				color: $orange;
+				&:hover {
+					color: lighten($orange, 20);
+				}
+			}
+		}
+	}
+}
+
+.brand, p, form  {
+	width: 442px;
+	box-sizing: border-box;
+	@media(max-width: 500px) {
+		width: 100%;
+		padding: 20px;
+	}
+}

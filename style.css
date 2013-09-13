@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body {
+  height: 100%; }
+  @media (max-width: 500px) {
+    html, body {
+      height: auto; } }
+
+.background {
+  background-color: #00A64F;
+  background-image: url("images/Imire-11-blur.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; }
+
+.brand {
+  height: 50%;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center; }
+  @media (max-width: 500px) {
+    .brand {
+      height: 300px;
+      padding: 40px;
+      box-sizing: border-box; } }
+  .brand img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto; }
+
+.content {
+  border-top: 4px solid #cccccc;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 40px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center; }
+  @media (max-width: 500px) {
+    .content {
+      position: relative;
+      height: auto;
+      padding: 40px;
+      box-sizing: border-box; } }
+  .content p {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: helvetica, arial, sans;
+    display: block;
+    margin: auto;
+    color: #999;
+    text-align: left; }
+    .content p img {
+      max-width: 100%;
+      margin-bottom: 20px; }
+  .content .italic {
+    font-style: italic; }
+  .content .modular {
+    font-weight: bold;
+    color: #65cf21; }
+  .content form {
+    margin-top: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; }
+  .content .email-input {
+    height: 60px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    font-size: 28px;
+    color: #cccccc;
+    padding: 5px 20px;
+    box-sizing: border-box; }
+  .content .email-submit {
+    position: absolute;
+    top: 29px;
+    right: 31px;
+    vertical-align: top;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    background: rgba(187, 239, 154, 0.8);
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid rgba(204, 204, 204, 0.8);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #999999;
+    font-size: 32px;
+    cursor: pointer;
+    background-image: url(images/heart.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    .content .email-submit:hover {
+      background-color: #d9f6c6;
+      background-size: 70%;
+      box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+  .content .links {
+    margin-top: 40px; }
+    .content .links li {
+      display: inline-block;
+      padding: 0 10px; }
+      .content .links li a {
+        font-family: helvetica, arial;
+        color: #4fa31a; }
+        .content .links li a:hover {
+          color: #71de2c; }
+      .content .links li .orange {
+        color: #ff721a; }
+        .content .links li .orange:hover {
+          color: #ffb180; }
+
+.brand, p, form {
+  width: 442px;
+  box-sizing: border-box; }
+  @media (max-width: 500px) {
+    .brand, p, form {
+      width: 100%;
+      padding: 20px; } }
