@@ -50,24 +50,30 @@ html, body {
     html, body {
       height: auto; } }
 
-.background {
-  background-color: #00A64F;
-  background-image: url("images/Imire-11-blur.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%; }
+b {
+  font-weight: bold; }
+
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #444; }
 
 .brand {
-  height: 50%;
+  border: 4px solid #cccccc;
+  border-top: 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
   margin: auto;
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center; }
   @media (max-width: 500px) {
     .brand {
-      height: 300px;
       padding: 40px;
-      box-sizing: border-box; } }
+      box-sizing: border-box;
+      margin-bottom: 100px; }
+      .brand img {
+        max-width: 50% !important; } }
   .brand img {
     display: inline-block;
     max-width: 100%;
@@ -91,12 +97,12 @@ html, body {
   .content p {
     padding-top: 20px;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.5;
     font-family: helvetica, arial, sans;
     display: block;
     margin: auto;
-    color: #999;
-    text-align: left; }
+    color: #444;
+    text-align: justify; }
     .content p img {
       max-width: 100%;
       margin-bottom: 20px; }
@@ -106,7 +112,7 @@ html, body {
     font-weight: bold;
     color: #65cf21; }
   .content form {
-    margin-top: 30px;
+    margin-top: 0;
     position: relative;
     margin-left: auto;
     margin-right: auto;
