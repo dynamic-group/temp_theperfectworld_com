@@ -54,19 +54,26 @@ b {
   font-weight: bold; }
 
 h1 {
-  font-size: 26px;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #444; }
+
+h2 {
+  font-size: 25px;
   font-weight: bold;
   margin: 20px 0 10px;
   color: #444; }
 
 .brand {
+  width: 442px;
   border: 4px solid #cccccc;
   border-top: 0;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.8);
   margin: auto;
-  padding-top: 25px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
   @media (max-width: 500px) {
     .brand {
       padding: 40px;
@@ -81,8 +88,6 @@ h1 {
 
 .content {
   border-top: 4px solid #cccccc;
-  position: absolute;
-  bottom: 0;
   padding-bottom: 40px;
   width: 100%;
   height: auto;
@@ -95,17 +100,19 @@ h1 {
       padding: 40px;
       box-sizing: border-box; } }
   .content p {
-    padding-top: 20px;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.7;
     font-family: helvetica, arial, sans;
     display: block;
     margin: auto;
     color: #444;
-    text-align: justify; }
+    text-align: justify;
+    padding-bottom: 15px; }
     .content p img {
       max-width: 100%;
       margin-bottom: 20px; }
+  .content img {
+    max-width: 100%; }
   .content .italic {
     font-style: italic; }
   .content .modular {
@@ -170,10 +177,10 @@ h1 {
         .content .links li .orange:hover {
           color: #ffb180; }
 
-.brand, p, form {
-  width: 442px;
+p, form {
+  width: 660px;
   box-sizing: border-box; }
   @media (max-width: 500px) {
-    .brand, p, form {
+    p, form {
       width: 100%;
       padding: 20px; } }

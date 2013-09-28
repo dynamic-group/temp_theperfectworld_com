@@ -21,9 +21,18 @@
 	</script>
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId=131391736932990";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="background">
 		<div class="brand">
 			<img src="images/logo.png">
+			<div class="fb-like" data-href="https://www.facebook.com/ThePerfectWorld" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
 		</div>
 		<div class="content">			
 			<h1>Heavy demand crashed our network!</h1>
@@ -36,6 +45,9 @@
 			</form>
 			<p style="text-align:center;padding-top:0;"><b>Sign up now to get news and early access to our new platform!</b></p>
 
+			<h2>Save the Rhino 2014!</h2>
+			<p>During 2014 The Perfect World will specifically target the fight against poaching in Africa. We will host many events online and around the globe. We call this "Save the Rhino 2014", click the banner to learn more!</p>
+			<a href="http://rhino2014.theperfectworld.com/" target="_blank"><img src="images/rhino.png" alt="Save the Rhino 2014" /></a>
 
 			<ul class="links">
 				<li><a id="toggleDesc" href="#" onclick='return showDesc();'>what is the perfect world?</a></li>
